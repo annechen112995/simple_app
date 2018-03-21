@@ -35,6 +35,8 @@ gem 'faker', '1.7.3'
 # gem 'capistrano-rails', group: :development
 gem 'will_paginate',           '3.1.6'
 gem 'bootstrap-will_paginate', '1.0.0'
+gem 'carrierwave',             '1.2.2'
+gem 'mini_magick',             '4.7.0'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
@@ -64,6 +66,7 @@ end
 
 group :production do
   gem 'pg', '0.18.4'
+  gem 'fog', '1.42'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
